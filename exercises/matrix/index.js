@@ -51,8 +51,11 @@ function matrix(n) {
     // Start column
     for (let i = endRow; i >= startRow; i--) {
       results[i][startColumn] = counter;
+      counter++;
     }
+    startColumn++;
   }
+  return results;
 }
 
 module.exports = matrix;
